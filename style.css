@@ -1,0 +1,22 @@
+.modes {
+    display: flex;
+    flex-direction: column;
+}
+
+
+form {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#submit {
+    width: 5rem;
+    padding: 0.5rem;
+}
+
+
+.container {
+    display: flex;
+}

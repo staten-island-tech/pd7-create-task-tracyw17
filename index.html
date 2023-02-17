@@ -1,13 +1,72 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Palette Generator</title>
-    <link rel="stylesheet" href="style.css">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+   <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body>
+   <div class="container">
+     <form>
+       <label for="hex">Hex: </label>
+       <input id="hex" type="text" />
+       <div class="modes">
+         <div class="mode">
+           <input id="monochrome" type="radio" name="mode" required />
+           <label for="monochrome">monochrome</label>
+         </div>
 
-</head>
-<body>
-    
-</body>
-</html>
+
+         <div class="mode">
+           <input id="monochrome-dark" type="radio" name="mode" required />
+           <label for="monochrome-dark">monochrome-dark</label>
+         </div>
+         <div class="mode">
+           <input id="monochrome-light" type="radio" name="mode" required />
+           <label for="monochrome-light">monochrome-light</label>
+         </div>
+         <div class="mode">
+           <input id="analogic" type="radio" name="mode" required />
+           <label for="analogic">analogic</label>
+         </div>
+         <div class="mode">
+           <input id="complement" type="radio" name="mode" required />
+           <label for="complement">complement</label>
+         </div>
+         <div class="mode">
+           <input id="analogic-complement" type="radio" name="mode" required />
+           <label for="analogic-complement">analogic-complement</label>
+         </div>
+         <div class="mode"><input id="triad" type="radio" name="mode" required />
+            <label for="triad">triad</label>
+          </div>
+          <div class="mode">
+            <input id="quad" type="radio" name="mode" required />
+            <label for="quad">quad</label>
+          </div>
+        </div>
+        <label for="count">Count: </label>
+        <input id="count" type="number" />
+        <div class="name">
+          <input id="named" type="radio" name="name" required />
+          <label for="named">Named</label>
+        </div>
+ 
+ 
+        <div class="name">
+          <input id="no-name" type="radio" name="name" required />
+          <label for="no-name">Not Named</label>
+        </div>
+ 
+ 
+        <input id="submit" type="submit" />
+      </form>
+      <div class="display"></div>
+    </div>
+ 
+ 
+    <script type="module" src="index.js"></script>
+  </body>
+ </html>
+ 
